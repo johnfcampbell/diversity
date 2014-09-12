@@ -1,0 +1,17 @@
+This project leans heavily on census.ire.org and attempts to calculate a diversity index for each county subdivision, i.e. town, in N.J.
+It might be possible to extend the method to other states.
+
+Two files are hard-coded into the outer script, DiversityCalc:
+all_050_in_34.P1.csv and all_060_in_34_combo.csv
+
+The first was downloaded from http://census.ire.org/data/bulkdata.html with 
+   state=New Jersey,
+   Summary Level=County
+   Table = P1. Total population
+
+It's used solely to assemble a table of the county names.
+
+The second file (all_060...) was created in Excel.
+It results from downloading two tables from the IRE bulk data page. 
+Those tables are P3. RACE and P4. HISPANIC OR LATINO ORIGIN at the county subdivision level.
+The combo sheet was created by pasting the p4 cells alongside the p3 table and verifying that the town names matched up.  
