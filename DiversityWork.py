@@ -43,12 +43,12 @@ def townCalc(line, under,countyName):
     sameRace2000 = sameRace2000 + sameAsian2000 + samePacific2000
 
     totalHispanicOrNot = int(line[under['P004001']])
-    totalHispanic = int(line[under['P004002']])
-    totalNotHispanic = int(line[under['P004003']])
+    totalHispanic = int(line[under['P004003']])
+    totalNotHispanic = int(line[under['P004002']])
 
     totalHispanicOrNot2000 = int(line[under['P004001.2000']])
-    totalHispanic2000 = int(line[under['P004002.2000']])
-    totalNotHispanic2000 = int(line[under['P004003.2000']])
+    totalHispanic2000 = int(line[under['P004003.2000']])
+    totalNotHispanic2000 = int(line[under['P004002.2000']])
 
     sameHispanic = (float(totalHispanic)/totalHispanicOrNot) ** 2
     sameNonHispanic = (float(totalNotHispanic)/totalHispanicOrNot) ** 2
